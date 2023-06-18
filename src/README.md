@@ -4,7 +4,6 @@
 
 设计模式分为三种类型，共23种：
 
-- **创建型模式
-  **:[单例模式](../src/main/java/com/botech/designpattern/singleton/单例模式.md)、[工厂模式]()、[建造者模式]()、[原型模式]().
+- **创建型模式**:[单例模式](../src/main/java/com/botech/designpattern/singleton/单例模式.md)、[工厂模式]()、[建造者模式]()、[原型模式]().
 - **结构型模式**
 - **行为型模式**

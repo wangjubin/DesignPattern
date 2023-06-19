@@ -1,4 +1,4 @@
-package com.botech.designpattern.factory.factorymethod.service;
+package com.botech.designpattern.factory.factorymethod.factory;
 
 import com.botech.designpattern.factory.simplefactory.service.IRuleConfigParser;
 

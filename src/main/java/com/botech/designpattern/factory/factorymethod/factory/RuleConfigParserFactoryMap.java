@@ -1,10 +1,9 @@
 package com.botech.designpattern.factory.factorymethod.factory;
 
-import com.botech.designpattern.factory.factorymethod.service.IRuleConfigParserFactory;
-import com.botech.designpattern.factory.factorymethod.service.impl.JsonRuleConfigParserFactory;
-import com.botech.designpattern.factory.factorymethod.service.impl.PropertiesRuleConfigParserFactory;
-import com.botech.designpattern.factory.factorymethod.service.impl.XmlRuleConfigParserFactory;
-import com.botech.designpattern.factory.factorymethod.service.impl.YamlRuleConfigParserFactory;
+import com.botech.designpattern.factory.factorymethod.factory.impl.JsonRuleConfigParserFactory;
+import com.botech.designpattern.factory.factorymethod.factory.impl.PropertiesRuleConfigParserFactory;
+import com.botech.designpattern.factory.factorymethod.factory.impl.XmlRuleConfigParserFactory;
+import com.botech.designpattern.factory.factorymethod.factory.impl.YamlRuleConfigParserFactory;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,11 +1,17 @@
 package com.botech.designpattern.factory.factorymethod;
 
+import com.botech.designpattern.factory.factorymethod.factory.IRuleConfigParserFactory;
 import com.botech.designpattern.factory.factorymethod.factory.RuleConfigParserFactoryMap;
-import com.botech.designpattern.factory.factorymethod.service.IRuleConfigParserFactory;
 import com.botech.designpattern.factory.simplefactory.bean.RuleConfig;
 import com.botech.designpattern.factory.simplefactory.exception.InvalidRuleConfigException;
 import com.botech.designpattern.factory.simplefactory.service.IRuleConfigParser;
 
+/**
+ * 规则配置源
+ *
+ * @author wangjubin
+ * @date 2023/06/19
+ */
 public class RuleConfigSource {
     public RuleConfig load(String ruleConfigFilePath) throws InvalidRuleConfigException {
         String ruleConfigFileExtension = getFileExtension(ruleConfigFilePath);
@@ -16,8 +22,7 @@ public class RuleConfigSource {
         IRuleConfigParser parser = parserFactory.createParser();
         String configText = "";
         //从ruleConfigFilePath文件中读取配置文本到configText中
-        RuleConfig ruleConfig = parser.parse(configText);
-        return ruleConfig;
+        return parser.parse(configText);
     }
 
     private String getFileExtension(String filePath) {

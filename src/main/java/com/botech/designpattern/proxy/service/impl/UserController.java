@@ -1,12 +1,17 @@
 package com.botech.designpattern.proxy.service.impl;
 
-import com.botech.designpattern.proxy.MetricsCollector;
 import com.botech.designpattern.proxy.bean.UserVo;
 import com.botech.designpattern.proxy.service.IUserController;
 
+/**
+ * 用户控制器
+ *
+ * @author wangjubin
+ * @date 2023/06/19
+ */
 public class UserController implements IUserController {
     //...省略其他属性和方法...
-    private MetricsCollector metricsCollector; // 依赖注入
+
 
     @Override
     public UserVo login(String telephone, String password) {

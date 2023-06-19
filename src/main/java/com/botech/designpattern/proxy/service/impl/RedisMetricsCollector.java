@@ -7,6 +7,12 @@ import com.botech.designpattern.proxy.service.MetricsStorage;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * redis度量收集器
+ *
+ * @author wangjubin
+ * @date 2023/06/19
+ */
 public class RedisMetricsCollector implements MetricsStorage {
     @Override
     public void saveRequestInfo(RequestInfo requestInfo) {

@@ -1,5 +1,7 @@
 package com.botech.designpattern.prototype;
 
+import cn.hutool.core.collection.ListUtil;
+
 import java.util.HashMap;
 import java.util.List;
 
@@ -38,6 +40,6 @@ public class Demo {
 
     private List<SearchWord> getSearchWords(long lastUpdateTime) {
         // TODO: 从数据库中取出更新时间>lastUpdateTime的数据
-        return null;
+        return ListUtil.empty();
     }
 }

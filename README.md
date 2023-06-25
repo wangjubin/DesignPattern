@@ -6,4 +6,4 @@
 
 - **创建型模式**:[单例模式](src/main/java/com/botech/designpattern/singleton/单例模式.md)、[工厂模式](src/main/java/com/botech/designpattern/factory/工厂模式.md)、[建造者模式](src/main/java/com/botech/designpattern/builder/建造者模式.md)、[原型模式](src/main/java/com/botech/designpattern/prototype/原型模式.md).
 - **结构型模式**:[代理模式](src/main/java/com/botech/designpattern/proxy/代理模式.md)、[桥接模式](src/main/java/com/botech/designpattern/bridge/桥接模式.md)、[装饰器模式](src/main/java/com/botech/designpattern/decorator/装饰器模式.md)、[适配器模式](src/main/java/com/botech/designpattern/adapter/适配器模式.md)、[门面模式](src/main/java/com/botech/designpattern/facade/门面模式.md)、[组合模式](src/main/java/com/botech/designpattern/composite/组合模式.md)、[享元模式](src/main/java/com/botech/designpattern/flyweight/享元模式.md).
-- **行为型模式**:[观察者模式](src/main/java/com/botech/designpattern/observer/观察者模式.md)、[模板方法模式](src/main/java/com/botech/designpattern/templatemethod/模板方法.md)
+- **行为型模式**:[观察者模式](src/main/java/com/botech/designpattern/observer/观察者模式.md)、[模板方法模式](src/main/java/com/botech/designpattern/templatemethod/模板方法.md)、[策略模式](src/main/java/com/botech/designpattern/strategy/策略模式.md)

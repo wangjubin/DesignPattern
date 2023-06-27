@@ -1,7 +1,14 @@
 package com.botech.designpattern.builder;
 
-import org.junit.platform.commons.util.StringUtils;
 
+import cn.hutool.core.util.ObjectUtil;
+
+/**
+ * 资源池配置
+ *
+ * @author wangjubin
+ * @date 2023/06/27
+ */
 public class ResourcePoolConfig {
     private String name;
     private int maxTotal;
@@ -46,7 +53,7 @@ public class ResourcePoolConfig {
 
         public ResourcePoolConfig build() {
             // 校验逻辑放到这里来做，包括必填项校验、依赖关系校验、约束条件校验等
-            if (StringUtils.isBlank(name)) {
+            if (ObjectUtil.isEmpty(name)) {
                 throw new IllegalArgumentException("name should not be empty.");
             }
             if (maxIdle > maxTotal) {
@@ -59,7 +66,7 @@ public class ResourcePoolConfig {
         }
 
         public Builder setName(String name) {
-            if (StringUtils.isBlank(name)) {
+            if (ObjectUtil.isEmpty(name)) {
                 throw new IllegalArgumentException("name should not be empty.");
             }
             this.name = name;
